@@ -35,7 +35,7 @@ build_triplet = @build@
 host_triplet = @host@
 target_triplet = @target@
 subdir = .
-DIST_COMMON = README $(am__configure_deps) $(srcdir)/Makefile.am \
+DIST_COMMON = README.md $(am__configure_deps) $(srcdir)/Makefile.am \
 	$(srcdir)/Makefile.in $(top_srcdir)/configure AUTHORS COPYING \
 	ChangeLog INSTALL NEWS build-aux/compile \
 	build-aux/config.guess build-aux/config.sub build-aux/depcomp \
@@ -189,8 +189,8 @@ top_srcdir = @top_srcdir@
 DISTCLEANFILES = *~ *.~*
 SUBDIRS = src
 bin_SCRIPTS = contrib/melt.sh contrib/freeze.sh contrib/poorZFS.py
-doc_DATA = README COPYING INSTALL AUTHORS NEWS ChangeLog docs/README.RS32
-EXTRA_DIST = README COPYING INSTALL AUTHORS NEWS ChangeLog contrib/freeze.sh contrib/melt.sh contrib/poorZFS.py docs/README.RS32
+doc_DATA = README.md COPYING INSTALL AUTHORS NEWS ChangeLog docs/README.RS32
+EXTRA_DIST = README.md COPYING INSTALL AUTHORS NEWS ChangeLog contrib/freeze.sh contrib/melt.sh contrib/poorZFS.py docs/README.RS32
 all: all-recursive
 
 .SUFFIXES:
