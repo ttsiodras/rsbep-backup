@@ -50,8 +50,9 @@ Here's an example of data recovery via the "freeze.sh" and
     9440c7d2ff545de1ff340e7a81a53efb  data
     9440c7d2ff545de1ff340e7a81a53efb  data2
     
-    home:/var/tmp/recovery$ echo Will now create artificial corruption 
-    home:/var/tmp/recovery$ echo of 127 times 512 which is 65024 bytes
+    home:/var/tmp/recovery$ # We just survived a 'round trip'.
+    home:/var/tmp/recovery$ # Now let's create artificial corruption
+    home:/var/tmp/recovery$ # of 127 times 512 which is 65024 bytes
     
     home:/var/tmp/recovery$ dd if=/dev/zero of=data.shielded bs=512 count=127 conv=notrunc
     127+0 records in
@@ -67,6 +68,8 @@ Here's an example of data recovery via the "freeze.sh" and
     9440c7d2ff545de1ff340e7a81a53efb  data
     9440c7d2ff545de1ff340e7a81a53efb  data2
     9440c7d2ff545de1ff340e7a81a53efb  data3
+
+    home:/var/tmp/recovery$ # Look, ma! We recovered...
 
 FUSE-based filesystem using this
 ================================
@@ -104,8 +107,8 @@ CHANGES from original rsbep
   as a single line before the "shielded" data, and this made the stream 
   fragile (if this information was lost, decoding failed...) 
 
-- It uses a default value of 16*255=4080 for parameter R, 
-  and it can thus tolerate 4080*16=65280 consecutive bytes 
+- It uses a default value of 16x255=4080 for parameter R, 
+  and it can thus tolerate 4080x16=65280 consecutive bytes 
   to be lost anywhere in the stream, and still recover...
 
 - It adds file size information in the shielded stream, so the recovery 
