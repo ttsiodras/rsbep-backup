@@ -1,0 +1,7 @@
+2009-03-09:
+    Added automatic detection for x86 ASM support, as well as a 
+    Python-FUSE for dead-easy deployment.
+
+2008-07-30:
+    Cleaned up my rsbep-related work a bit, so that others can use
+    the things I built to provide error-resiliency to their files...

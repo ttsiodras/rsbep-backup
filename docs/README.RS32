@@ -1,0 +1,13 @@
+This package is a special version of the Reed-Solomon package. It is
+hardwired for the (255,223) code over GF(256). The encoder is implemented
+entirely in optimized assembler for the Intel 386 series CPU, and the
+decoder has an assembler assist for computing the syndrome components.
+
+The result is a much faster encoder/decoder for this particular code
+than the general C version. The encoding speed on a 133 MHz Pentium is
+about 30 Mb/s. The decoding speed on a block without any errors is
+about 16 Mb/s.
+
+Phil Karn
+karn@ka9q.ampr.org
+August 1997

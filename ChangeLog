@@ -1,0 +1,21 @@
+2009-03-09: ttsiodras@gmail.com (Thanassis Tsiodras)
+
+    - This version detects during ./configure whether to use
+      x86 ASM or not - it also comes with a Python FUSE script
+      that allows you to mount Reed-Solomon protected filesystems.
+
+2008-07-30: ttsiodras@gmail.com (Thanassis Tsiodras)
+
+    CHANGES from original rsbep: 
+
+    - gravy (autoconf/automake), ...
+    - This version doesn't write the 3 parameters of rsbep as a 
+      single line before the data, as this makes the stream fragile
+      (if this information is lost, decoding fails...)
+    - It uses a default value of 16*255=4080 for parameter D, 
+      and it can thus tolerate 4080*16=65280 consecutive bytes 
+      to be lost anywhere in the stream, and still recover...
+    - It comes with two very simple scripts (freeze.sh, melt.sh)
+      that keep track of the input size, and thus offer a complete
+      interface for standalone file "shielding".
+
