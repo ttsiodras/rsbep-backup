@@ -5,6 +5,8 @@ This is a slightly modified version of rsbep0.0.5 which I have
 been using to create error-resilient backups of data (able to
 survive hard disks' bad sectors, scratched CD/DVD backups, etc)
 
+I've written a full blog post about it [here](https://www.thanassis.space/rsbep.html).
+
 INSTALL
 =======
 
