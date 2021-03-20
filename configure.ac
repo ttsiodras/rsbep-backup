@@ -1,4 +1,4 @@
-AC_INIT([rsbep], [0.1.0-ttsiodras], [ttsiodras@gmail.com])
+AC_INIT([rsbep], [0.2.0-ttsiodras], [ttsiodras@gmail.com])
 
 AC_CONFIG_MACRO_DIR([ac-macros])
 
