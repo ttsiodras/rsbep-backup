@@ -3,3 +3,9 @@ config.log
 config.status
 src/.deps/
 src/Makefile
+autom4te.cache/
+src/rsbep
+src/rsbep-rs.o
+src/rsbep-rsbep.o
+src/rsbep_chopper
+src/rsbep_chopper.o
